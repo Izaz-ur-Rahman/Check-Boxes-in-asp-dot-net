@@ -19,12 +19,12 @@ namespace CheckBoxesAspdotnet.Controllers
             {
                 AcceptTerms = false
             };
-            return View();
+            return View(model);
         }
 
         public IActionResult Privacy()
         {
-            return View(model);
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
