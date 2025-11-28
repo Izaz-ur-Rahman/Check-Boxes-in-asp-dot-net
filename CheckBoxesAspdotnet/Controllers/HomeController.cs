@@ -27,8 +27,13 @@ namespace CheckBoxesAspdotnet.Controllers
         {
             var model = new ViewModel()
             {
-                //AcceptTerms = false,
-                //Text = "I Accept The Terms"
+                CheckBoxes = new List<CheckBoxOption>()
+                {
+                    new CheckBoxOption() { IsChecked = false, Text = "Option 1", Value = "1" },
+                    new CheckBoxOption() { IsChecked = true, Text = "Option 2", Value = "2" },
+                    new CheckBoxOption() { IsChecked = false, Text = "Option 3", Value = "3" },
+                }
+
             };
             return View(model);
         }

@@ -2,7 +2,7 @@
 {
     public class ViewModel
     {
-     
+        public List<CheckBoxOption> CheckBoxes { get; set; }
     }
     //public class ViewModel
     //{
