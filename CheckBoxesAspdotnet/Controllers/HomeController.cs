@@ -13,13 +13,31 @@ namespace CheckBoxesAspdotnet.Controllers
             _logger = logger;
         }
 
+        //public IActionResult Index()
+        //{
+        //    var model = new ViewModel()
+        //    {
+        //        AcceptTerms = false,
+        //        Text = "I Accept The Terms"
+        //    };
+        //    return View(model);
+        //}
+
         public IActionResult Index()
         {
             var model = new ViewModel()
             {
-                AcceptTerms = false
+                //AcceptTerms = false,
+                //Text = "I Accept The Terms"
             };
             return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Index(ViewModel data)
+        {
+            //var value = data.AcceptTerms;
+            return View();
         }
 
         public IActionResult Privacy()

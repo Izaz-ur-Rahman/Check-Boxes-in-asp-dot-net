@@ -2,14 +2,19 @@
 @{
     ViewData["Title"] = "Home Page";
 }
+<form asp-controller="Home" asp-action="Index" method="post">
+   
+    <br>
+    <input value="Submit" type="submit" class="btn btn-success" />
+</form>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
-<div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-    <label class="form-check-label" for="flexCheckDefault">
-        Default checkbox
-    </label>
-</div>
+@* <form asp-controller="Home" asp-action="Index" method="post">
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" asp-for="AcceptTerms">
+        <label class="form-check-label" for="flexCheckDefault">
+            @Model.Text
+        </label>
+    </div>
+    <br>
+    <input value="Submit" type="submit" class="btn btn-success" />
+</form> *@
