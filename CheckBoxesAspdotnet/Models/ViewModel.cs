@@ -2,5 +2,6 @@
 {
     public class ViewModel
     {
+        public bool AcceptTerms { get; set; }
     }
 }
