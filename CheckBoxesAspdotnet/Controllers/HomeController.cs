@@ -29,9 +29,9 @@ namespace CheckBoxesAspdotnet.Controllers
             {
                 CheckBoxes = new List<CheckBoxOption>()
                 {
-                    new CheckBoxOption() { IsChecked = false, Text = "Option 1", Value = "1" },
-                    new CheckBoxOption() { IsChecked = true, Text = "Option 2", Value = "2" },
-                    new CheckBoxOption() { IsChecked = false, Text = "Option 3", Value = "3" },
+                    new CheckBoxOption() { IsChecked = false, Text = "Cricket", Value = "1" },
+                    new CheckBoxOption() { IsChecked = true, Text = "Hockey", Value = "2" },
+                    new CheckBoxOption() { IsChecked = false, Text = "Football", Value = "3" },
                 }
 
             };
